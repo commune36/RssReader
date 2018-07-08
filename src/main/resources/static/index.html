@@ -1,0 +1,25 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title>Getting Started: Serving Web Content</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <link href="css/default.css" rel="stylesheet"></link>
+</head>
+<script>
+$(function() {
+    // テキストフォームを監視して入力があるたびに実行
+    $('#inputText').on('input change', function() {
+        // テキストを取得
+        var url = $(this).val();
+
+        // リンクを書き換え
+        $('#link').attr('href', '/viewer?url=' + url);
+    });
+});
+</script>
+<body>
+<input type="text" id="inputText" placeholder="表示するRSSのURLを入力してください。">
+<a href="/viewer" id="link">RSSを表示する</a>
+</body>
+</html>

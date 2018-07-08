@@ -1,0 +1,58 @@
+body {
+  margin: 0;
+  line-height: 1.2;
+  font-size: 13px;
+  color: #fff;
+  font-family: "メイリオ", "ヒラギノ W3", "ＭＳ Ｐゴシック", Helvetica, Arial, sans-serif;
+}
+
+div {
+  display: block;
+  margin: 0;
+  padding: 0;
+}
+
+.header {
+  line-height: 1.2;
+  padding-left: 20px;
+  overflow: hidden;
+  color: #fff;
+  background-color: #242424;
+}
+
+.main {
+  line-height: 1.2;
+  min-height: 172px;
+  padding-left: 20px;
+  overflow: hidden;
+  color: #fff;
+  background-color: #242424;
+}
+
+.footer {
+  line-height: 1.5;
+  font-size: 12px;
+  color: #999;
+  min-height: 20px;
+  text-align: center;
+  overflow: hidden;
+  background-color: #111;
+}
+
+li {
+  list-style: none;
+  margin-bottom: 20px;
+  font-size: 12px;
+}
+
+li a {
+  padding: 2px 0 0 5px;
+  display: inline-block;
+  font-weight: bold;
+  border-left: 3px solid #d30606;
+  color: #fff;
+}
+
+input {
+  width:400px;
+}

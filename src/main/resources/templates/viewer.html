@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <link href="/css/default.css" th:href="@{/css/default.css}" rel="stylesheet"></link>
+    <title th:text="${channel.title}"></title>
+</head>
+<body>
+<div class="header">
+    <p th:text="${channel.description}"></p>
+</div>
+<div class="main">
+    <ul>
+        <li th:each="item : ${channel.itemList}">
+            <a th:href="${item.link}" th:text="${item.title}"></a>
+        </li>
+    </ul>
+</div>
+<div class="footer">
+    <p th:text="${channel.copyright}"></p>
+</div>
+</body>
+</html>
